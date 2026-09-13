@@ -15,17 +15,17 @@
 <div id="modal" class="modal" onclick="closeOnBackdrop(event)"><div class="game-window"><div class="window-bar"><span class="tab-dot"></span><span id="windowTitle" class="window-title">Game</span><button class="window-close" onclick="closeGame()">×</button></div><div id="gameContent" style="flex:1;display:flex"></div></div></div>
 <script>
 const games=[
- {name:"Eaglercraft",category:"Minecraft",icon:"⛏️",url:"https://minecraftforfreex.com",embed:true},
-{name:"2048",category:"Puzzle",icon:"🧩",url:"https://play2048.co/",embed:true},
-{name:"Tic-Tac-Toe",category:"Puzzle",icon:"⭕",url:"https://playtictactoe.org/",embed:true},
+ {name:"five nights at epstiens",category:"survival",icon:"⛏️",url:"https://freedomgamingzone.github.io/five-nights-at-epsteins/",embed:true},
+{name:"single player eaglercraft",category:"minecraft",icon:"⛏️",url:"https://sems.neocities.org/gamesource/mc/",embed:true},
+{name:"bitlife",category:"Puzzle",icon:"⭕",url:"https://unblockedgames.github.io/projects/bitlife/index.html",embed:true},
 {name:"Cookie Clicker",category:"Casual",icon:"🍪",url:"https://orteil.dashnet.org/cookieclicker/",embed:true},
-{name:"Chess",category:"Strategy",icon:"♟️",url:"https://www.chess.com/play",embed:true},
+{name:"Chess",category:"Strategy",icon:"THE ROOK",url:"https://www.chess.com/play",embed:false},
 {name:"Krunker",category:"Action",icon:"🎯",url:"https://krunker.io/",embed:true},
 {name:"Agar.io",category:"Arcade",icon:"🟢",url:"https://agar.io/",embed:true},
 {name:"Slither.io",category:"Arcade",icon:"🐍",url:"https://slither.io/",embed:true},
 {name:"Paper.io",category:"Arcade",icon:"🗺️",url:"https://paper-io.com/",embed:true},
-{name:"Hextris",category:"Arcade",icon:"🔷",url:"https://hextris.io/",embed:true},
-{name:"Drift Hunters",category:"Racing",icon:"🏎️",url:"https://www.drifthunters.io/",embed:true}
+{name:"Hextris",category:"Arcade",icon:"🔷",url:"https://unblockedgames.github.io/projects/hextris/index.html",embed:true},
+{name:"Drift Hunters",category:"Racing",icon:"🏎️",url:"https://unblockedgames.github.io/projects/drit-hunters/index.html",embed:true}
 ];
 let activeCategory="All";const gamesEl=document.getElementById("games"),categoriesEl=document.getElementById("categories"),searchEl=document.getElementById("gameSearch"),countEl=document.getElementById("gameCount"),titleEl=document.getElementById("sectionTitle"),emptyEl=document.getElementById("empty");const categories=["All",...new Set(games.map(g=>g.category))];
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[c]))}
